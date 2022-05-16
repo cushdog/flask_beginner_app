@@ -24,7 +24,7 @@ def sign_up():
             flash('First name must be greater than 1 characters', category='error')
         elif password1 != password2:
             flash('Passwords don\'t match', category='error')
-        elif len(password1) < 7:
+        elif len(password1) < 8:
             flash('Password must be greater than 7 characters', category='error')
         else:
             #add user to database
